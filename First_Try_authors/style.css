@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 8px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    font-size: 1.7rem;/* rem; belirlenen fontsize'ı çarpar */
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: yellow;
+}
+
+p{
+    padding: 1.6rem 0 ;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+header{
+    height: 46rem; /*460px*/
+}
+
+header .bg-image{
+    position: absolute;/*yazıları imagenin üstüne aldı*/
+    background-image: url(https://www.bontena.com/images/articles/lifestyle/Greatest-Authors-of-All-Time-1200.jpg);
+    background-size: contain;
+    background-position:center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; /*yazıyı görselden ön plana aldı*/
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+     display: inline-block;
+     background-color: #333;
+     color: white;
+     border: 1px solid #666;
+     padding: 1.6rem 3.2rem;
+     margin: 3rem 0;
+     transition: all 0.5s; /*maouse ile üzerine gelişimzdeki etkileşim arayüzü gecikmesi*/
+}
+
+.btn:hover{
+    background-color: rgb(235, 200, 135);
+    color: #333;
+
+}
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+#section-b{
+    padding: 2rem;
+}
+#section-b ul{
+    list-style: none;
+
+}
+
+#section-b ul li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 4rem;
+}
+
+#section-d .box{
+    padding: 3rem;
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+
+footer{
+    padding: 5rem;
+    background: black;
+}
+footer a{
+    color: yellowgreen;
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+
+}
